@@ -1,0 +1,623 @@
+
+ Stack frame [1] was created with value = 1
+ Stack frame [2] was created with value = 2
+ Stack frame [3] was created with value = 3
+ Stack frame [4] was created with value = 4
+ Stack frame [5] was created with value = 5
+
+ Stack for 5/10 elements has been created
+
+
+ Atomic data was initialized
+
+ Atomic data:
+ First integer = 23
+ Second integer = -51
+ First unsigned integer = 37
+ Second unsigned integer = 56
+ First long integer = 176
+ Second long integer = -60
+ First long unsigned integer = 286
+ Second long unsigned integer = 271
+
+
+ Thread P1 has been started!
+ -----------------------------------------------
+
+ P1 Cond checking
+ P1 locked MCR1 mutex
+ "isFull" condition was not met
+ Stack frame [6] was created with value = 6
+ P1 unlocked MCR1 mutex
+ P1 send sig2 broadcast signal
+
+ P1 Cond checking
+ P1 locked MCR1 mutex
+ "isFull" condition was not met
+ Stack frame [7] was created with value = 7
+ P1 unlocked MCR1 mutex
+ P1 send sig2 broadcast signal
+
+ P1 Cond checking
+ P1 locked MCR1 mutex
+ "isFull" condition was not met
+ Stack frame [8] was created with value = 8
+ P1 unlocked MCR1 mutex
+ P1 send sig2 broadcast signal
+
+ P1 Cond checking
+ P1 locked MCR1 mutex
+ "isFull" condition was not met
+ Stack frame [9] was created with value = 9
+ P1 unlocked MCR1 mutex
+ P1 send sig2 broadcast signal
+
+ P1 Cond checking
+ P1 locked MCR1 mutex
+ "isFull" condition was not met
+ Stack frame [10] was created with value = 10
+
+ 	Stack buffer is full!
+ 	UL = 1	DL = 0
+
+ P1 unlocked MCR1 mutex
+ P1 send sig2 broadcast signal
+
+ P1 Cond checking
+ P1 locked MCR1 mutex
+ P1 is waiting for "not full" signal
+ P1 unlocked MCR1 mutex for dispatch switching
+
+
+ Thread P2 has been started!
+ -----------------------------------------------
+
+ P2 Cond checking
+ P2 (buffer) locked MCR1 mutex
+ P2 (buffer) is waiting for "not full" signal
+ P2 (buffer) unlocked MCR1 mutex for dispatch switching
+
+
+ Thread P3 has been started!
+ -----------------------------------------------
+
+ P3 Cond checking
+ P3 before modification
+ P3 after modification
+ SCR21 in P3 was opened
+ P3 is waiting for SCR22 opening
+
+
+ Thread P4 has been started!
+ -----------------------------------------------
+
+ P4 Cond checking
+ P4 locked MCR1 mutex
+ "isEmpty" condition was not met
+ Stack frame [10] was deleted from stack
+ P4 unlocked MCR1 mutex
+ P4 send sig1 broadcast signal
+
+ P4 Cond checking
+ P4 locked MCR1 mutex
+ "isEmpty" condition was not met
+ Stack frame [9] was deleted from stack
+ P4 unlocked MCR1 mutex
+ P4 send sig1 broadcast signal
+
+ P4 Cond checking
+ P4 locked MCR1 mutex
+ "isEmpty" condition was not met
+ Stack frame [8] was deleted from stack
+ P4 unlocked MCR1 mutex
+ P4 send sig1 broadcast signal
+
+ P4 Cond checking
+ P4 locked MCR1 mutex
+ "isEmpty" condition was not met
+ Stack frame [7] was deleted from stack
+ P4 unlocked MCR1 mutex
+ P4 send sig1 broadcast signal
+
+ P4 Cond checking
+ P4 locked MCR1 mutex
+ "isEmpty" condition was not met
+ Stack frame [6] was deleted from stack
+ P4 unlocked MCR1 mutex
+ P4 send sig1 broadcast signal
+
+ P4 Cond checking
+ P4 locked MCR1 mutex
+ "isEmpty" condition was not met
+ Stack frame [5] was deleted from stack
+ P4 unlocked MCR1 mutex
+ P4 send sig1 broadcast signal
+
+ P4 Cond checking
+ P4 locked MCR1 mutex
+ "isEmpty" condition was not met
+ Stack frame [4] was deleted from stack
+ P4 unlocked MCR1 mutex
+ P4 send sig1 broadcast signal
+
+ P4 Cond checking
+ P4 locked MCR1 mutex
+ "isEmpty" condition was not met
+ Stack frame [3] was deleted from stack
+ P4 unlocked MCR1 mutex
+ P4 send sig1 broadcast signal
+
+ P4 Cond checking
+ P4 locked MCR1 mutex
+ "isEmpty" condition was not met
+ Stack frame [2] was deleted from stack
+ P4 unlocked MCR1 mutex
+ P4 send sig1 broadcast signal
+
+ P4 Cond checking
+ P4 locked MCR1 mutex
+ "isEmpty" condition was not met
+ Stack frame [1] was deleted from stack
+
+ 	Stack buffer is empty!
+ 	UL = 1	DL = 1
+
+ P4 unlocked MCR1 mutex
+ P4 send sig1 broadcast signal
+
+ P4 Cond checking
+ P4 locked MCR1 mutex
+ P4 is waiting for "not full" signal
+ P4 unlocked MCR1 mutex for dispatch switching
+
+
+ Thread P5 has been started!
+ -----------------------------------------------
+
+ P5 Cond checking
+ P5 (buffer) locked MCR1 mutex
+ P5 (buffer) is waiting for "not empty" signal
+ P5 (buffer) unlocked MCR1 mutex for dispatch switching
+
+
+ Thread P6 has been started!
+ -----------------------------------------------
+
+ P6 Cond checking
+ P6 before modification
+ P6 after modification
+ SCR22 was opened in P6
+ P6 is waiting for SCR21 opening
+ SCR21 in P6 was opened by thread P3
+ P6 mutex MCR2 lock
+ flag_p6_p2 in P6 = true
+ flag_p6_p5 in P6 = true
+ P6 unlocked MCR2 mutex
+ P6 send sig21 broadcast signal
+
+ Atomic data:
+ First integer = -68
+ Second integer = -113
+ First unsigned integer = 74
+ Second unsigned integer = 34
+ First long integer = -1
+ Second long integer = 192
+ First long unsigned integer = 286
+ Second long unsigned integer = 271
+
+ P6 Cond checking
+ P6 before modification
+ P6 after modification
+ SCR22 was opened in P6
+ P6 is waiting for SCR21 opening
+ SCR22 in P3 was opened by thread P6
+ P3 locked MCR2 mutex
+ flag_p3_p2 in P3 = true
+ P3 unlocked MCR2 mutex
+ P3 send sig21 signal
+
+ Atomic data:
+ First integer = -149
+ Second integer = 115
+ First unsigned integer = 112
+ Second unsigned integer = 56
+ First long integer = -1
+ Second long integer = 0
+ First long unsigned integer = 286
+ Second long unsigned integer = 271
+
+ P3 Cond checking
+ P3 before modification
+ P3 after modification
+ SCR21 in P3 was opened
+ P3 is waiting for SCR22 opening
+ SCR22 in P3 was opened by thread P6
+ P3 locked MCR2 mutex
+ flag_p3_p2 in P3 = true
+ P3 unlocked MCR2 mutex
+ P3 send sig21 signal
+
+ Atomic data:
+ First integer = -189
+ Second integer = -35
+ First unsigned integer = 200
+ Second unsigned integer = 58
+ First long integer = -1
+ Second long integer = 0
+ First long unsigned integer = 286
+ Second long unsigned integer = 271
+
+ P3 Cond checking
+ P3 before modification
+ P3 after modification
+ SCR21 in P3 was opened
+ P3 is waiting for SCR22 opening
+ SCR21 in P6 was opened by thread P3
+ P6 mutex MCR2 lock
+ flag_p6_p2 in P6 = true
+ flag_p6_p5 in P6 = true
+ P6 unlocked MCR2 mutex
+ P6 send sig21 broadcast signal
+
+ Atomic data:
+ First integer = -276
+ Second integer = 118
+ First unsigned integer = 244
+ Second unsigned integer = 27
+ First long integer = -1
+ Second long integer = 0
+ First long unsigned integer = 286
+ Second long unsigned integer = 271
+
+ P6 Cond checking
+ P6 before modification
+ P6 after modification
+ SCR22 was opened in P6
+ P6 is waiting for SCR21 opening
+ SCR21 in P6 was opened by thread P3
+ P6 mutex MCR2 lock
+ flag_p6_p2 in P6 = true
+ flag_p6_p5 in P6 = true
+ P6 unlocked MCR2 mutex
+ P6 send sig21 broadcast signal
+
+ Atomic data:
+ First integer = -308
+ Second integer = -71
+ First unsigned integer = 258
+ Second unsigned integer = 18
+ First long integer = -1
+ Second long integer = 0
+ First long unsigned integer = 286
+ Second long unsigned integer = 271
+
+ P6 Cond checking
+ P6 before modification
+ P6 after modification
+ SCR22 was opened in P6
+ P6 is waiting for SCR21 opening
+ SCR22 in P3 was opened by thread P6
+ P3 locked MCR2 mutex
+ flag_p3_p2 in P3 = true
+ P3 unlocked MCR2 mutex
+ P3 send sig21 signal
+
+ Atomic data:
+ First integer = -340
+ Second integer = 87
+ First unsigned integer = 318
+ Second unsigned integer = 53
+ First long integer = -1
+ Second long integer = 0
+ First long unsigned integer = 286
+ Second long unsigned integer = 271
+
+ P3 Cond checking
+ P3 before modification
+ P3 after modification
+ SCR21 in P3 was opened
+ P3 is waiting for SCR22 opening
+ SCR22 in P3 was opened by thread P6
+ P3 locked MCR2 mutex
+ flag_p3_p2 in P3 = true
+ P3 unlocked MCR2 mutex
+ P3 send sig21 signal
+
+ Atomic data:
+ First integer = -417
+ Second integer = -67
+ First unsigned integer = 378
+ Second unsigned integer = 20
+ First long integer = -1
+ Second long integer = 0
+ First long unsigned integer = 286
+ Second long unsigned integer = 271
+
+ P3 Cond checking
+ P3 before modification
+ P3 after modification
+ SCR21 in P3 was opened
+ P3 is waiting for SCR22 opening
+ P1 received some signal
+ P1 locked MCR1 mutex
+ "isFull" condition was not met
+ Stack frame [1] was created with value = 1
+ P1 unlocked MCR1 mutex
+ P1 send sig2 broadcast signal
+
+ P1 Cond checking
+ P1 locked MCR1 mutex
+ "isFull" condition was not met
+ Stack frame [2] was created with value = 2
+ P1 unlocked MCR1 mutex
+ P1 send sig2 broadcast signal
+
+ P1 Cond checking
+ P1 locked MCR1 mutex
+ "isFull" condition was not met
+ Stack frame [3] was created with value = 3
+ P1 unlocked MCR1 mutex
+ P1 send sig2 broadcast signal
+
+ P1 Cond checking
+ P1 locked MCR1 mutex
+ "isFull" condition was not met
+ Stack frame [4] was created with value = 4
+ P1 unlocked MCR1 mutex
+ P1 send sig2 broadcast signal
+
+ P1 Cond checking
+ P1 locked MCR1 mutex
+ "isFull" condition was not met
+ Stack frame [5] was created with value = 5
+ P1 unlocked MCR1 mutex
+ P1 send sig2 broadcast signal
+
+ P1 Cond checking
+ P1 locked MCR1 mutex
+ "isFull" condition was not met
+ Stack frame [6] was created with value = 6
+ P1 unlocked MCR1 mutex
+ P1 send sig2 broadcast signal
+
+ P1 Cond checking
+ P1 locked MCR1 mutex
+ "isFull" condition was not met
+ Stack frame [7] was created with value = 7
+ P1 unlocked MCR1 mutex
+ P1 send sig2 broadcast signal
+
+ P1 Cond checking
+ P1 locked MCR1 mutex
+ "isFull" condition was not met
+ Stack frame [8] was created with value = 8
+ P1 unlocked MCR1 mutex
+ P1 send sig2 broadcast signal
+
+ P1 Cond checking
+ P1 locked MCR1 mutex
+ "isFull" condition was not met
+ Stack frame [9] was created with value = 9
+ P1 unlocked MCR1 mutex
+ P1 send sig2 broadcast signal
+
+ P1 Cond checking
+ P1 locked MCR1 mutex
+ "isFull" condition was not met
+ Stack frame [10] was created with value = 10
+
+ 	Stack buffer is full!
+ 	UL = 2	DL = 1
+
+ P1 unlocked MCR1 mutex
+ P1 send sig2 broadcast signal
+
+ P1 Cond checking
+ P1 locked MCR1 mutex
+ P1 is waiting for "not full" signal
+ P1 unlocked MCR1 mutex for dispatch switching
+ P2 (buffer) received some signal
+ P2 (buffer) locked MCR1 mutex
+ P2 (buffer) is waiting for "not full" signal
+ P2 (buffer) unlocked MCR1 mutex for dispatch switching
+ P5 (buffer) received some signal
+ P5 (buffer) locked MCR1 mutex
+ "isEmpty" condition was not met
+ Stack frame [10] was deleted from stack
+ P5 (buffer) unlocked MCR1 mutex
+ P5 send sig1 broadcast signal
+ P5 (atmc) locked MCR2 mutex
+ P5 (atmc) received confirmed sig21
+ flag_p6_p5 in P5 = false
+
+ Atomic data:
+ First integer = -500
+ Second integer = 91
+ First unsigned integer = 385
+ Second unsigned integer = 31
+ First long integer = -1
+ Second long integer = 0
+ First long unsigned integer = 286
+ Second long unsigned integer = 271
+ P5 (atmc) unlocked MCR2 mutex
+
+ P5 Cond checking
+ P5 (buffer) locked MCR1 mutex
+ "isEmpty" condition was not met
+ Stack frame [9] was deleted from stack
+ P5 (buffer) unlocked MCR1 mutex
+ P5 send sig1 broadcast signal
+ P5 (atmc) locked MCR2 mutex
+ P5 (atmc) is waiting for sig21 signal from P6
+ P5 (atmc) unlocked MCR2 mutex for dispatch switching
+ P4 received some signal
+ P4 locked MCR1 mutex
+ "isEmpty" condition was not met
+ Stack frame [8] was deleted from stack
+ P4 unlocked MCR1 mutex
+ P4 send sig1 broadcast signal
+
+ P4 Cond checking
+ P4 locked MCR1 mutex
+ "isEmpty" condition was not met
+ Stack frame [7] was deleted from stack
+ P4 unlocked MCR1 mutex
+ P4 send sig1 broadcast signal
+
+ P4 Cond checking
+ P4 locked MCR1 mutex
+ "isEmpty" condition was not met
+ Stack frame [6] was deleted from stack
+ P4 unlocked MCR1 mutex
+ P4 send sig1 broadcast signal
+
+ P4 Cond checking
+ P4 locked MCR1 mutex
+ "isEmpty" condition was not met
+ Stack frame [5] was deleted from stack
+ P4 unlocked MCR1 mutex
+ P4 send sig1 broadcast signal
+
+ P4 Cond checking
+ P4 locked MCR1 mutex
+ "isEmpty" condition was not met
+ Stack frame [4] was deleted from stack
+ P4 unlocked MCR1 mutex
+ P4 send sig1 broadcast signal
+
+ P4 Cond checking
+ P4 locked MCR1 mutex
+ "isEmpty" condition was not met
+ Stack frame [3] was deleted from stack
+ P4 unlocked MCR1 mutex
+ P4 send sig1 broadcast signal
+
+ P4 Cond checking
+ P4 locked MCR1 mutex
+ "isEmpty" condition was not met
+ Stack frame [2] was deleted from stack
+ P4 unlocked MCR1 mutex
+ P4 send sig1 broadcast signal
+
+ P4 Cond checking
+ P4 locked MCR1 mutex
+ "isEmpty" condition was not met
+ Stack frame [1] was deleted from stack
+
+ 	Stack buffer is empty!
+ 	UL = 2	DL = 2
+
+ P4 unlocked MCR1 mutex
+ P4 send sig1 broadcast signal
+
+ P4 Cond checking
+ End of P4 thread
+
+ P2 (buffer) received some signal
+ P2 (buffer) locked MCR1 mutex
+ "isFull" condition was not met
+ P2 (buffer) unlocked MCR1 mutex
+ P2 (buffer) send sig2 broadcast signal
+ P2 (atmc) locked MCR2 mutex
+ P2 (atmc) received confirmed sig21
+ flag_p3_p2 = false
+ flag_p6_p5 = false
+
+ Atomic data:
+ First integer = -500
+ Second integer = 91
+ First unsigned integer = 385
+ Second unsigned integer = 31
+ First long integer = -1
+ Second long integer = 0
+ First long unsigned integer = 286
+ Second long unsigned integer = 271
+ P2 (atmc) before modification
+ P2 (atmc) after modification
+ P2 (atmc) unlocked MCR2 mutex
+
+ P2 Cond checking
+ End of P2 thread
+
+ P5 (atmc) received some signal
+ P5 (atmc) locked MCR2 mutex
+ P5 (atmc) received confirmed sig21
+ flag_p6_p5 in P5 = false
+
+ Atomic data:
+ First integer = -591
+ Second integer = -11
+ First unsigned integer = 432
+ Second unsigned integer = 86
+ First long integer = -1
+ Second long integer = 0
+ First long unsigned integer = 286
+ Second long unsigned integer = 271
+ P5 (atmc) unlocked MCR2 mutex
+
+ P5 Cond checking
+ End of P5 thread
+
+ SCR21 in P6 was opened by thread P3
+ P6 mutex MCR2 lock
+ flag_p6_p2 in P6 = true
+ flag_p6_p5 in P6 = true
+ P6 unlocked MCR2 mutex
+ P6 send sig21 broadcast signal
+
+ Atomic data:
+ First integer = -591
+ Second integer = -11
+ First unsigned integer = 432
+ Second unsigned integer = 86
+ First long integer = -1
+ Second long integer = 0
+ First long unsigned integer = 286
+ Second long unsigned integer = 271
+
+ P6 Cond checking
+ End of P6 thread
+
+ SCR22 in P3 was opened by thread P6
+ P3 locked MCR2 mutex
+ flag_p3_p2 in P3 = true
+ P3 unlocked MCR2 mutex
+ P3 send sig21 signal
+
+ Atomic data:
+ First integer = -591
+ Second integer = -11
+ First unsigned integer = 432
+ Second unsigned integer = 86
+ First long integer = -1
+ Second long integer = 0
+ First long unsigned integer = 286
+ Second long unsigned integer = 271
+
+ P3 Cond checking
+ End of P3 thread
+
+ P1 received some signal
+ P1 locked MCR1 mutex
+ "isFull" condition was not met
+ P1 unlocked MCR1 mutex
+ P1 send sig2 broadcast signal
+
+ P1 Cond checking
+ End of P1 thread
+
+
+ Pthread 1 was stopped
+ Pthread 2 was stopped
+ Pthread 3 was stopped
+ Pthread 4 was stopped
+ Pthread 5 was stopped
+ Pthread 6 was stopped
+
+ All theads have been stopped!
+
+ Semaphore SCR21 was destroyed
+ Semaphore SCR22 was destroyed
+
+ UL = 2
+ DL = 2
